@@ -19,8 +19,8 @@ class _HlsTracksPageState extends State<HlsTracksPage> {
     );
     BetterPlayerDataSource dataSource = BetterPlayerDataSource(
       BetterPlayerDataSourceType.network,
-      Constants.hlsTestStreamUrl,
-      useAsmsSubtitles: true,
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      //videoFormat: BetterPlayerVideoFormat.hls
     );
     _betterPlayerController = BetterPlayerController(betterPlayerConfiguration);
     _betterPlayerController.setupDataSource(dataSource);
@@ -31,7 +31,7 @@ class _HlsTracksPageState extends State<HlsTracksPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("HLS tracks"),
+        title: Text("HLS tracks 11"),
       ),
       body: Column(
         children: [
